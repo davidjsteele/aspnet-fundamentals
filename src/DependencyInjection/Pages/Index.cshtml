@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+        <p>Controller operations:</p>
+
+        <ul>
+            <li><strong>Transient:</strong> @Model.TransientOperation.OperationId</li>
+            <li><strong>Scoped:</strong> @Model.ScopedOperation.OperationId</li>
+            <li><strong>Singleton:</strong> @Model.SingletonOperation.OperationId</li>
+            <li><strong>Instance:</strong> @Model.SingletonInstanceOperation.OperationId</li>
+        </ul>
+
+        <p>OperationService operations:</p>
+
+        <ul>
+            <li><strong>Transient:</strong> @Model.OperationService.TransientOperation.OperationId</li>
+            <li><strong>Scoped:</strong> @Model.OperationService.ScopedOperation.OperationId</li>
+            <li><strong>Singleton:</strong> @Model.OperationService.SingletonOperation.OperationId</li>
+            <li><strong>Instance:</strong> @Model.OperationService.SingletonInstanceOperation.OperationId</li>
+        </ul>
+    </div>

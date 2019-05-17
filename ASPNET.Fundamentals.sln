@@ -5,16 +5,16 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B4583E9D-364A-4528-9958-73F453EBAC69}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.StartupClass", "src\ASPNET.Fundamentals.StartupClass\ASPNET.Fundamentals.StartupClass.csproj", "{1939799B-016E-48FF-9A95-83DD9308DD4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.StartupClass", "src\StartupClass\ASPNET.Fundamentals.StartupClass.csproj", "{1939799B-016E-48FF-9A95-83DD9308DD4D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F6AFD5C-6822-4AD8-8FFD-18FE194E7A31}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DependencyInjection", "src\ASPNET.Fundamentals.DependencyInjection\ASPNET.Fundamentals.DependencyInjection.csproj", "{C4664536-F4FE-4E35-9065-A5651FB08E45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DependencyInjection", "src\DependencyInjection\ASPNET.Fundamentals.DependencyInjection.csproj", "{C4664536-F4FE-4E35-9065-A5651FB08E45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.Autofac", "src\ASPNET.Fundamentals.Autofac\ASPNET.Fundamentals.Autofac.csproj", "{70E7E954-F35B-4CC7-BCE4-4136AB367A94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.Autofac", "src\Autofac\ASPNET.Fundamentals.Autofac.csproj", "{70E7E954-F35B-4CC7-BCE4-4136AB367A94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
