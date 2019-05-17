@@ -1,0 +1,23 @@
+﻿@page
+@inject Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnv
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <p> ASPNETCORE_ENVIRONMENT = @hostingEnv.EnvironmentName</p>
+
+    <environment include="Development">
+        <div>Development!</div>
+    </environment>
+    <environment exclude="Development">
+        <div>Not development!</div>
+    </environment>
+    <environment include="Staging,Development">
+        <div>Development or staging?!</div>
+    </environment>
+</div>

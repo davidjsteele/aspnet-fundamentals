@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ASPNET.Fundamentals.Options.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using ASPNET.Fundamentals.Options.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Options;
 

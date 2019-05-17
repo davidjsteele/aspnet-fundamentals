@@ -1,4 +1,4 @@
-﻿using ASPNET.Fundamentals.Options.Models;
+﻿using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ASPNET.Fundamentals.Options
+namespace ASPNET.Fundamentals.Environments
 {
     public class Startup
     {
@@ -17,30 +17,24 @@ namespace ASPNET.Fundamentals.Options
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
+        {
+            StartupConfigureServices(services);
+        }
+
+        public void ConfigureStagingServices(IServiceCollection services)
+        {
+            StartupConfigureServices(services);
+        }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        private void StartupConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
-            // Add the service required for using options.
-            services.AddOptions();
-
-            services.Configure<MyOptions>(Configuration);
-            services.Configure<MyOptionsWithDelegateConfig>(myOptions =>
-            {
-                myOptions.Option1 = "value1_configured_by_delegate";
-                myOptions.Option2 = 500;
-            });
-            services.Configure<MySubOptions>(Configuration.GetSection("subsection"));
-            services.Configure<MyOptions>("named_options_1", Configuration);
-            services.Configure<MyOptions>("named_options_2", myOptions =>
-            {
-                myOptions.Option1 = "named_options_2_value1_from_action";
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -53,17 +47,25 @@ namespace ASPNET.Fundamentals.Options
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
+
+            if (env.IsProduction() || env.IsStaging() || env.IsEnvironment("Staging_2"))
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+            app.UseMvc();
+        }
 
+        public void ConfigureStaging(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (!env.IsStaging())
+            {
+                throw new Exception("Not staging.");
+            }
+
+            app.UseExceptionHandler("/Error");
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }

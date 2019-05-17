@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ASPNET.Fundamentals.Options
+namespace ASPNET.Fundamentals.Environments
 {
     public class Program
     {
