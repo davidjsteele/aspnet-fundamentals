@@ -20,11 +20,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middlew
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependency-injection", "dependency-injection", "{B493ED2E-0C14-4CC1-91EC-F88BA386FDFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.DI.ServiceLifetimes", "src\dependency-injection\ServiceLifetimes\ASPNET.Fundamentals.DI.ServiceLifetimes.csproj", "{6BC87DDD-E86B-4BF0-9D65-EE1A2E4266C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DI.ServiceLifetimes", "src\dependency-injection\ServiceLifetimes\ASPNET.Fundamentals.DI.ServiceLifetimes.csproj", "{6BC87DDD-E86B-4BF0-9D65-EE1A2E4266C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.DI.Autofac", "src\dependency-injection\Autofac\ASPNET.Fundamentals.DI.Autofac.csproj", "{0C26AD61-87BC-434A-A8F0-FCE7D4E2DF10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DI.Autofac", "src\dependency-injection\Autofac\ASPNET.Fundamentals.DI.Autofac.csproj", "{0C26AD61-87BC-434A-A8F0-FCE7D4E2DF10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.Middleware.Custom", "src\middleware\Custom\ASPNET.Fundamentals.Middleware.Custom.csproj", "{56C145C4-DF4A-44A8-9AAC-629957CF856A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middleware.Custom", "src\middleware\Custom\ASPNET.Fundamentals.Middleware.Custom.csproj", "{56C145C4-DF4A-44A8-9AAC-629957CF856A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.Host", "src\Host\ASPNET.Fundamentals.Host.csproj", "{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,6 +110,18 @@ Global
 		{56C145C4-DF4A-44A8-9AAC-629957CF856A}.Release|x64.Build.0 = Release|Any CPU
 		{56C145C4-DF4A-44A8-9AAC-629957CF856A}.Release|x86.ActiveCfg = Release|Any CPU
 		{56C145C4-DF4A-44A8-9AAC-629957CF856A}.Release|x86.Build.0 = Release|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Debug|x64.Build.0 = Debug|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Debug|x86.Build.0 = Debug|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Release|x64.ActiveCfg = Release|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Release|x64.Build.0 = Release|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Release|x86.ActiveCfg = Release|Any CPU
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +135,7 @@ Global
 		{6BC87DDD-E86B-4BF0-9D65-EE1A2E4266C7} = {B493ED2E-0C14-4CC1-91EC-F88BA386FDFB}
 		{0C26AD61-87BC-434A-A8F0-FCE7D4E2DF10} = {B493ED2E-0C14-4CC1-91EC-F88BA386FDFB}
 		{56C145C4-DF4A-44A8-9AAC-629957CF856A} = {292811FE-11E2-4EEC-8AEF-776E7E48D83A}
+		{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D} = {B4583E9D-364A-4528-9958-73F453EBAC69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6EE9CB7-6DC9-4BD5-9817-0202DE8C35C5}
