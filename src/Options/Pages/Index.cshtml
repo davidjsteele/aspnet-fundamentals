@@ -1,0 +1,93 @@
+﻿@page
+@model IndexModel
+@using Microsoft.Extensions.Options
+@inject IOptionsMonitor<MyOptions> OptionsAccessor
+@{
+    ViewData["Title"] = "Options Sample";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">Example #1: Simple options</h5>
+            </div>
+            <div class="panel-body">
+                <p>@Model.SimpleOptions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">Example #2: Options configured by a delegate</h5>
+            </div>
+            <div class="panel-body">
+                <p>@Model.SimpleOptionsWithDelegateConfig</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">Example #3: Suboptions</h5>
+            </div>
+            <div class="panel-body">
+                <p>@Model.SubOptions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">Example #4: Model and injected options</h5>
+            </div>
+            <div class="panel-body">
+                <p>Options provided by the model: <code>@@Model.MyOptions.Option1</code> and <code>@@Model.MyOptions.Option2</code></p>
+                <p><b>Option1:</b> @Model.MyOptions.Option1</p>
+                <p><b>Option2:</b> @Model.MyOptions.Option2</p>
+
+                <p>Options injected into the page: <code>@@inject IOptionsMonitor&lt;MyOptions&gt; OptionsAccessor</code> with <code>@@OptionsAccessor.CurrentValue.Option1</code> and <code>@@OptionsAccessor.CurrentValue.Option2</code></p>
+                <p><b>Option1:</b> @OptionsAccessor.CurrentValue.Option1</p>
+                <p><b>Option2:</b> @OptionsAccessor.CurrentValue.Option2</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">Example #5: Snapshot options</h5>
+            </div>
+            <div class="panel-body">
+                <p>@Model.SnapshotOptions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">Example #6: Named options</h5>
+            </div>
+            <div class="panel-body">
+                <p>@Model.NamedOptions</p>
+            </div>
+        </div>
+    </div>
+</div>
