@@ -12,19 +12,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "middleware", "middleware", "{292811FE-11E2-4EEC-8AEF-776E7E48D83A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{292811FE-11E2-4EEC-8AEF-776E7E48D83A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middleware.Terminal", "src\middleware\Terminal\ASPNET.Fundamentals.Middleware.Terminal.csproj", "{04C8C504-D2A6-4AC1-849A-AAABAFCCB68F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middleware.Terminal", "src\Middleware\Terminal\ASPNET.Fundamentals.Middleware.Terminal.csproj", "{04C8C504-D2A6-4AC1-849A-AAABAFCCB68F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middleware.Map", "src\middleware\Map\ASPNET.Fundamentals.Middleware.Map.csproj", "{7034DB8B-8E41-4DEF-B21B-EE9886700DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middleware.Map", "src\Middleware\Map\ASPNET.Fundamentals.Middleware.Map.csproj", "{7034DB8B-8E41-4DEF-B21B-EE9886700DF9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependency-injection", "dependency-injection", "{B493ED2E-0C14-4CC1-91EC-F88BA386FDFB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DI", "DI", "{B493ED2E-0C14-4CC1-91EC-F88BA386FDFB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DI.ServiceLifetimes", "src\dependency-injection\ServiceLifetimes\ASPNET.Fundamentals.DI.ServiceLifetimes.csproj", "{6BC87DDD-E86B-4BF0-9D65-EE1A2E4266C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DI.ServiceLifetimes", "src\DI\ServiceLifetimes\ASPNET.Fundamentals.DI.ServiceLifetimes.csproj", "{6BC87DDD-E86B-4BF0-9D65-EE1A2E4266C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DI.Autofac", "src\dependency-injection\Autofac\ASPNET.Fundamentals.DI.Autofac.csproj", "{0C26AD61-87BC-434A-A8F0-FCE7D4E2DF10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.DI.Autofac", "src\DI\Autofac\ASPNET.Fundamentals.DI.Autofac.csproj", "{0C26AD61-87BC-434A-A8F0-FCE7D4E2DF10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middleware.Custom", "src\middleware\Custom\ASPNET.Fundamentals.Middleware.Custom.csproj", "{56C145C4-DF4A-44A8-9AAC-629957CF856A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Middleware.Custom", "src\Middleware\Custom\ASPNET.Fundamentals.Middleware.Custom.csproj", "{56C145C4-DF4A-44A8-9AAC-629957CF856A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET.Fundamentals.Host", "src\Host\ASPNET.Fundamentals.Host.csproj", "{6FB4B509-9DF4-4317-B9E2-8D96DAE19E9D}"
 EndProject
