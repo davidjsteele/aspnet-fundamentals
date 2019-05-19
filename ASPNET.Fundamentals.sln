@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.ErrorHa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.HttpClientFactory", "src\HttpClientFactory\ASPNET.Fundamentals.HttpClientFactory.csproj", "{DACADA10-7062-451A-8A03-9BC11F8DE056}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.Fundamentals.StaticFiles", "src\StaticFiles\ASPNET.Fundamentals.StaticFiles.csproj", "{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -206,6 +208,18 @@ Global
 		{DACADA10-7062-451A-8A03-9BC11F8DE056}.Release|x64.Build.0 = Release|Any CPU
 		{DACADA10-7062-451A-8A03-9BC11F8DE056}.Release|x86.ActiveCfg = Release|Any CPU
 		{DACADA10-7062-451A-8A03-9BC11F8DE056}.Release|x86.Build.0 = Release|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Debug|x64.Build.0 = Debug|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Debug|x86.Build.0 = Debug|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Release|x64.ActiveCfg = Release|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Release|x64.Build.0 = Release|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Release|x86.ActiveCfg = Release|Any CPU
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -226,6 +240,7 @@ Global
 		{39A3BBBB-F51D-46E2-B803-7340198A1CF0} = {B4583E9D-364A-4528-9958-73F453EBAC69}
 		{D07A84E5-E2A6-4390-9444-904D624CC4CD} = {B4583E9D-364A-4528-9958-73F453EBAC69}
 		{DACADA10-7062-451A-8A03-9BC11F8DE056} = {B4583E9D-364A-4528-9958-73F453EBAC69}
+		{F87EA170-14EF-4BD2-8B5D-320B2DCE30F5} = {B4583E9D-364A-4528-9958-73F453EBAC69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6EE9CB7-6DC9-4BD5-9817-0202DE8C35C5}
